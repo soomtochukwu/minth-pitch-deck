@@ -47,7 +47,7 @@ export default function TitleSlide() {
           </div>
           <div className="flex items-center">
             <span className="w-3 h-3 bg-purple-400 rounded-full mr-3"></span>
-            Proof of Ship 2024
+            Proof of Ship 2025
           </div>
         </motion.div>
 

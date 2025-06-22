@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Building, Github, ExternalLink, Users, Code } from "lucide-react"
+import Link from "next/link"
 
 const achievements = [
   {
@@ -85,41 +86,48 @@ export default function TractionSlide() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <motion.div
-            className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm text-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-          >
-            <Github className="w-12 h-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-3 text-white">Repository V1</h3>
-            <p className="text-gray-300 mb-4">Original concept and foundation</p>
-            <div className="text-cyan-400 font-semibold">View on GitHub →</div>
-          </motion.div>
+          <Link target="_" href={"https://github.com/soomtochukwu/MINTH/fork"}>
+            <motion.div
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm text-center"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              <Github className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-white">Repository V1</h3>
+              <p className="text-gray-300 mb-4">Original concept and foundation</p>
+              <div className="text-cyan-400 font-semibold">View on GitHub →</div>
+            </motion.div>
+          </Link>
 
-          <motion.div
-            className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm text-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-          >
-            <Github className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-3 text-white">Repository V2</h3>
-            <p className="text-gray-300 mb-4">Enhanced features and Celo integration</p>
-            <div className="text-purple-400 font-semibold">View on GitHub →</div>
-          </motion.div>
+          <Link target="_" href={"https://github.com/soomtochukwu/cminth/fork"}>
+            <motion.div
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm text-center"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
+            >
+              <Github className="w-12 h-12 text-purple-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-white">Repository V2</h3>
+              <p className="text-gray-300 mb-4">Enhanced features and Celo integration</p>
+              <div className="text-purple-400 font-semibold">View on GitHub →</div>
+            </motion.div>
 
-          <motion.div
-            className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm text-center"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
-            <ExternalLink className="w-12 h-12 text-green-400 mx-auto mb-4" />
-            <h3 className="text-xl font-bold mb-3 text-white">Live Platform</h3>
-            <p className="text-gray-300 mb-4">Experience Minth today</p>
-            <div className="text-green-400 font-semibold">Visit minth.xyz →</div>
-          </motion.div>
+          </Link>
+
+          <Link target="_" href={"https://minth.xyz"}>
+            <motion.div
+              className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm text-center"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+            >
+              <ExternalLink className="w-12 h-12 text-green-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-3 text-white">Live Platform</h3>
+              <p className="text-gray-300 mb-4">Experience Minth today</p>
+              <div className="text-green-400 font-semibold">Visit minth.xyz →</div>
+            </motion.div>
+          </Link>
         </div>
       </div>
     </div>

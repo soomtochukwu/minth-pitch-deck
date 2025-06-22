@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Rocket, ArrowRight, Github, Mail, ExternalLink } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function CTASlide() {
   return (
@@ -53,48 +53,31 @@ export default function CTASlide() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         >
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-xl px-12 py-6 h-auto"
-          >
+          <Link
+            // size="lg"
+            className="bg-gradient-to-r from-cyan-500 to-purple-600 flex hover:from-cyan-600 hover:to-purple-700 text-xl px-12 py-6 h-auto" target="nn" href={"https://minth.xyz"}          >
             Try Minth Now <ArrowRight className="ml-3 w-6 h-6" />
-          </Button>
+          </Link>
 
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-gray-600 text-white hover:bg-gray-800 text-xl px-12 py-6 h-auto"
-          >
+          <Link
+            className="flex border-gray-600 text-white hover:bg-gray-800 text-xl px-12 py-6 h-auto" href={"https://github.com/soomtochukwu/cMinth/fork"} target="___"      >
             <Github className="mr-3 w-6 h-6" /> View Source Code
-          </Button>
+          </Link>
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-3 gap-8"
+          className="flex justify-center md:grid-cols-3 gap-8"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.1 }}
         >
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
-            <ExternalLink className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-4">Experience Minth</h3>
-            <p className="text-gray-300 mb-4">Visit our live platform and start creating</p>
-            <div className="text-cyan-400 font-semibold">minth.xyz →</div>
-          </div>
 
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
-            <Github className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-4">Open Source</h3>
-            <p className="text-gray-300 mb-4">Explore our code and contribute</p>
-            <div className="text-purple-400 font-semibold">GitHub Repository →</div>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm">
+          <Link className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-gray-700 rounded-2xl p-8 backdrop-blur-sm" href={"mailto:onwuajuesesomtochukwu@gmail.com"}>
             <Mail className="w-12 h-12 text-green-400 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-white mb-4">Partner With Us</h3>
             <p className="text-gray-300 mb-4">Ready to collaborate? Let's talk</p>
             <div className="text-green-400 font-semibold">hello@minth.xyz →</div>
-          </div>
+          </Link>
         </motion.div>
 
         <motion.div

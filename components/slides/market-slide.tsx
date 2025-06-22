@@ -36,7 +36,7 @@ export default function MarketSlide() {
               <h3 className="text-3xl font-bold text-orange-400 mb-6">Total Addressable Market</h3>
               <div className="space-y-4">
                 {[
-                  { label: "Global NFT Market 2024", value: "$80B+", icon: Globe },
+                  { label: "Global NFT Market 2025", value: "$80B+", icon: Globe },
                   { label: "Mobile Users Globally", value: "6.8B", icon: Smartphone },
                   { label: "Digital Artists Worldwide", value: "50M+", icon: Users },
                 ].map((stat, index) => (
@@ -90,7 +90,7 @@ export default function MarketSlide() {
               <h3 className="text-3xl font-bold mb-8 text-center text-white">Market Growth Projection</h3>
               <div className="space-y-8">
                 {[
-                  { year: "2024", value: "$80B", percentage: 40 },
+                  { year: "2025", value: "$80B", percentage: 40 },
                   { year: "2026", value: "$150B", percentage: 75 },
                   { year: "2028", value: "$200B", percentage: 100 },
                 ].map((projection, index) => (
